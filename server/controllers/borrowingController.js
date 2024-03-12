@@ -61,10 +61,46 @@ const updateBorrowing = async (req, res, next) => {
     }
 }
 
+//delete borrowing
+const deleteBorrowing = async (req, res, next) => {
+    try {
+        const book = await Borrowing.findByIdAndDelete(req.params.id);
+
+        if(!book) {
+            res.status(400);
+            throw new Error('can not delete borrowign req');
+        }
+
+       
+        return res.status(200).json({id: req.params.id});
+
+    } catch (error) {
+        next(error);
+    }
+}
+
+//get single borrowing
+const getBorrowing = async (req, res, next) => {
+    try {
+        const borrowing = await Borrowing.findById(req.params.id);
+
+        if(!borrowing) {
+            res.status(400);
+            throw new Error('Borrowing not found');
+        }
+
+        return res.status(200).json(borrowing);
+
+    } catch (error) {
+        next(error);
+    }
+}
 
 module.exports = {
     getBorrowings,
     createBorrowing,
     updateBorrowing,
+    deleteBorrowing,
+    getBorrowing,
 
 }
