@@ -3,10 +3,12 @@ console.log('Entering through server.js');
 const bookRoutes = require('./routes/bookRoutes');
 const connectDB = require('./config/db');
 const dotenv = require('dotenv').config();
+const borrowingRoutes = require('./routes/borrowingRoutes');
+
 const express = require('express');
 const app = express();
 
-const { errorHandler } = require('./Middleware/errorHandler');
+const  errorHandler  = require('./Middleware/errorHandler');
 
 
 const port = process.env.PORT || 5000;
@@ -18,6 +20,7 @@ app.use(express.json());
 
 //setup routes
 app.use("/api/books", bookRoutes)
+app.use("/api/borrowings", borrowingRoutes)
 
-
+app.use(errorHandler);
 app.listen(port, () => console.log(`listening to port ${port}`));
