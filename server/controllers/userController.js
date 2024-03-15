@@ -4,9 +4,27 @@ const jwt = require("jsonwebtoken");
 
 
 const getUsers = async(req, res, next) => {
-    return res.json({message: "Get All Users"});
+   try {
+    const users = await User.find();
+    if(!users){
+        res.status(400);
+        throw new Error("Users not found");
+    
+    }
+
+    return res.status(200).json(users);
+
+   } catch (error) {
+    next(error)
+   }
+
+
+
+
 }
 
+
+//create user
 
 const createUser = async(req,res,next) => {
     try {
@@ -52,10 +70,16 @@ if (!isCorrect) {
 
 //generate token 
 //set cookie
-const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "7d" });
+const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, { expiresIn: "7d" });//?? 2-41.33 different
+res.cookie("jwt", token);
 
+const { password: userPassword, ...rest } = user._doc;
 
-return res.status(200).json(user);
+return res.status(200).json(
+    {
+        ...rest,
+    }
+);
 
     } catch (error) {
         next(error)
@@ -63,8 +87,17 @@ return res.status(200).json(user);
 
 }
 
+
+const logoutUser = async(req, res, next) => {
+    res.cookie("jwt", " ", {expiresIn: "-1"});
+    return res.json({message: "You Have Been Logged Out"});
+}
+
+
+
 module.exports = {
     getUsers,
     createUser,
     loginUser,
+    logoutUser,
 }

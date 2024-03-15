@@ -12,6 +12,7 @@ const express = require('express');
 const app = express();
 
 const  errorHandler  = require('./Middleware/errorHandler');
+const { auth } = require('./Middleware/authMiddleware');
 
 
 const port = process.env.PORT || 5000;
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use(express.json());
 
 //setup routes
+app.use("/auth", auth)
 app.use("/api/books", bookRoutes)
 app.use("/api/borrowings", borrowingRoutes)
 app.use("/api/users", userRoutes);
