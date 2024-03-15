@@ -5,6 +5,7 @@ const connectDB = require('./config/db');
 const dotenv = require('dotenv').config();
 const borrowingRoutes = require('./routes/borrowingRoutes');
 const userRoutes = require('./routes/userRoutes');
+const cookieParser = require('cookie-parser');
 
 
 const express = require('express');
@@ -18,6 +19,7 @@ const port = process.env.PORT || 5000;
 connectDB();
 
 //Middlewere
+app.use(cookieParser());
 app.use(express.json());
 
 //setup routes
