@@ -1,0 +1,22 @@
+.hover-reg{
+    transition: transform 0.1s ease-in-out 0.0s !important; 
+}
+.hover-reg:hover{
+
+    background: #37bc7e!important;;
+transform: rotate(-2deg)  scale(1.1)!important;
+
+font-weight: bold !important;
+}
+
+
+
+.hover-log:hover ,.home:hover{
+    color: #37bc7e!important;
+    transform: rotate(-2deg)  scale(1.1)!important;
+    
+}
+
+.hover-text-reg:hover{
+ 
+}

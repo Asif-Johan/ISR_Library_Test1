@@ -1,0 +1,102 @@
+[
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a0",
+      "name": "John Doe",
+      "studentId": "1234567890",
+      "contact": "john.doe@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:30:00.000Z",
+      "updatedAt": "2024-03-17T12:30:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a1",
+      "name": "Alice Smith",
+      "studentId": "0987654321",
+      "contact": "alice.smith@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:31:00.000Z",
+      "updatedAt": "2024-03-17T12:31:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a2",
+      "name": "Emily Johnson",
+      "studentId": "1357902468",
+      "contact": "emily.johnson@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:32:00.000Z",
+      "updatedAt": "2024-03-17T12:32:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a3",
+      "name": "Michael Brown",
+      "studentId": "2468013579",
+      "contact": "michael.brown@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:33:00.000Z",
+      "updatedAt": "2024-03-17T12:33:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a4",
+      "name": "Sophia Wilson",
+      "studentId": "9876543210",
+      "contact": "sophia.wilson@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:34:00.000Z",
+      "updatedAt": "2024-03-17T12:34:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a5",
+      "name": "James Taylor",
+      "studentId": "3692581470",
+      "contact": "james.taylor@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:35:00.000Z",
+      "updatedAt": "2024-03-17T12:35:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a6",
+      "name": "Olivia Martinez",
+      "studentId": "1472583690",
+      "contact": "olivia.martinez@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:36:00.000Z",
+      "updatedAt": "2024-03-17T12:36:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a7",
+      "name": "Liam Brown",
+      "studentId": "7418529630",
+      "contact": "liam.brown@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:37:00.000Z",
+      "updatedAt": "2024-03-17T12:37:00.000Z"
+    },
+    {
+      "bookId": "61e5f45e6c049b8f3a4921a8",
+      "name": "Emma Johnson",
+      "studentId": "8523697410",
+      "contact": "emma.johnson@example.com",
+      "borrowDate": "2024-03-17T08:00:00.000Z",
+      "returnDate": "2024-04-17T08:00:00.000Z",
+      "confirmed": false,
+      "createdAt": "2024-03-17T12:38:00.000Z",
+      "updatedAt": "2024-03-17T12:38:00.000Z"
+    }
+
+]

@@ -1,0 +1,53 @@
+[
+    {
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "studentId": "123456789",
+      "contact": "+1234567890",
+      "password": "password123",
+      "isAdmin": true,
+      "createdAt": "2024-03-17T08:30:00.000Z",
+      "updatedAt": "2024-03-17T08:30:00.000Z"
+    },
+    {
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "studentId": "987654321",
+      "contact": "+9876543210",
+      "password": "password456",
+      "isAdmin": false,
+      "createdAt": "2024-03-17T09:00:00.000Z",
+      "updatedAt": "2024-03-17T09:00:00.000Z"
+    },
+    {
+      "name": "Alice Johnson",
+      "email": "alice.johnson@example.com",
+      "studentId": "555666777",
+      "contact": "+5556667770",
+      "password": "password789",
+      "isAdmin": false,
+      "createdAt": "2024-03-17T09:30:00.000Z",
+      "updatedAt": "2024-03-17T09:30:00.000Z"
+    },
+    {
+      "name": "David Brown",
+      "email": "david.brown@example.com",
+      "studentId": "111222333",
+      "contact": "+1112223330",
+      "password": "passwordabc",
+      "isAdmin": true,
+      "createdAt": "2024-03-17T10:00:00.000Z",
+      "updatedAt": "2024-03-17T10:00:00.000Z"
+    },
+    {
+      "name": "Emily White",
+      "email": "emily.white@example.com",
+      "studentId": "444555666",
+      "contact": "+4445556660",
+      "password": "passworddef",
+      "isAdmin": false,
+      "createdAt": "2024-03-17T11:00:00.000Z",
+      "updatedAt": "2024-03-17T11:00:00.000Z"
+    }
+  ]
+  
