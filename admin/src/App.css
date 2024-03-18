@@ -3,3 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.all-hover:hover{
+  transform: rotate(-2deg)  scale(1.1)!important;
+}
